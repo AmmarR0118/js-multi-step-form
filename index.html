@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Multi - Step Form</title>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">Signup Form</div>
+        <div class="progress">
+            <div class="step">
+                <p>Basic</p>
+                <div class="bar">
+                    <span class="number">
+                        <span class="bullet">1</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="step">
+                <p>Contact</p>
+                <div class="bar">
+                    <span class="number">
+                        <span class="bullet">2</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="step">
+                <p>Birth</p>
+                <div class="bar">
+                    <span class="number">
+                        <span class="bullet">3</span>
+                    </span>
+                </div>
+            </div>
+
+            <div class="step">
+                <p>Submit</p>
+                <div class="bar">
+                    <span class="number">
+                        <span class="bullet">4</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <form action="#">
+            <div class="page slidepage">
+                <div class="title">Basic Info:</div>
+                <div class="label">First Name</div>
+                <input class="firstname" type="text" name="first-name">
+                <p class="error name1">This field is required.</p>
+                <div class="label">Last Name</div>
+                <input type="text" name="last-name">
+                <p class="error">This field is required.</p>
+                <div class="btn">
+                    <button class="next-1" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="title">Contact Info:</div>
+                <div class="label">Email</div>
+                <input class="email" type="email" name="email">
+                <p class="error emaile">Please enter a valid email.</p>
+                <div class="label">Phone Number</div>
+                <input class="phone" type="tel" name="phone-no">
+                <p class="error phonee">Please a valid phone number.</p>
+                <div class="btn">
+                    <button class="prev-2" type="button">Previous</button>
+                    <button class="next-2" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="title">Personal Info:</div>
+                <div class="label">Birth Date</div>
+                <input class="birth" type="date" name="birth-date">
+                <p class="error birthe">This field is required.</p>
+                <div class="label">Gender</div>
+                <select>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <p class="error">This field is required.</p>
+                <div class="btn">
+                    <button class="prev-3" type="button">Previous</button>
+                    <button class="next-3" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="page">
+                <div class="title">Login Info:</div>
+                <div class="label">Username</div>
+                <input class="user" type="username" name="username">
+                <p class="error usere">This field is required.</p>
+                <div class="label">Password</div>
+                <input class="pass" type="password" name="password">
+                <p class="error passe">This field is required.</p>
+                <div class="btn">
+                    <button class="prev-4" type="button">Previous</button>
+                    <input class="submit-btn" type="button" value="Submit">
+                </div>
+            </div>
+        </form>
+
+        <script src="index.js" type="text/javascript"></script>
+    </div>
+</body>
+</html>

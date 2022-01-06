@@ -1,0 +1,133 @@
+body {
+    width: 100vw;
+    height: calc(100vh - 30px);
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: -webkit-linear-gradient(top , violet, lightblue);
+}
+.main {
+    width: 100%;
+    max-width: 270px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 25px;
+}
+.heading {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.progress {
+    display: flex;
+    padding-bottom: 20px;
+}
+.step {
+    width: 100%;
+}
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+.text {
+    color: violet;
+    border-color: violet !important;
+}
+.bullet {
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+.step:first-of-type .bullet {
+    padding: 0 8px;
+}
+.bar {
+    position: relative;
+}
+.number::before, .number::after {
+    content: '';
+    width: 33px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 50px;
+    background-color: black;
+}
+.violet::after {
+    background-color: violet;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+.step:last-of-type .number::after,.step:last-of-type .number::before {
+    content: none;
+}
+form {
+    display: flex;
+    overflow: hidden;
+}
+.page {
+    min-width: 100%;
+    transition: 0.3s;
+}
+.title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.label {
+    text-align: left;
+}
+input, select {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    padding: 2px 6px;
+    outline: none;
+    border: 1px solid #aaa;
+}
+button, .submit-btn {
+    width: 270px;
+    background-color: violet;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    margin: 12px 0 20px 0;
+    padding: 4px;
+    cursor: pointer;
+    width: 48%;
+
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+.next-1{
+    width: 100%;
+}
+button:hover, .submit-btn:hover {
+    background-color: black;
+}
+.error {
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    visibility: hidden;
+}
